@@ -1,0 +1,23 @@
+settlement_date,short_interest_shares,avg_daily_volume,days_to_cover,float_shares,pct_of_float,note
+2026-06-15,23331117,69191993,1.0,638888888,3.7,"Nasdaq/FINRA bi-monthly short-interest report, pulled 2026-08-16. Float = the 638,888,888 Class A shares sold in the IPO (424B4 cover acc. 0001628280-26-042639 + 10-Q acc. 0001628280-26-052535, over-allotment exercised in full). This settlement PREDATES the 6 Aug 2026 unlock, so the IPO float is the correct denominator. Upper bound: it assumes nothing else became freely tradable first."
+2026-06-30,111298613,151628172,1.0,638888888,17.4,"Nasdaq/FINRA bi-monthly short-interest report, pulled 2026-08-16. Float = the 638,888,888 Class A shares sold in the IPO (424B4 cover acc. 0001628280-26-042639 + 10-Q acc. 0001628280-26-052535, over-allotment exercised in full). This settlement PREDATES the 6 Aug 2026 unlock, so the IPO float is the correct denominator. Upper bound: it assumes nothing else became freely tradable first."
+2026-07-15,165048407,75797552,2.1775,638888888,25.8,"Nasdaq/FINRA bi-monthly short-interest report, pulled 2026-08-16. Float = the 638,888,888 Class A shares sold in the IPO (424B4 cover acc. 0001628280-26-042639 + 10-Q acc. 0001628280-26-052535, over-allotment exercised in full). This settlement PREDATES the 6 Aug 2026 unlock, so the IPO float is the correct denominator. Upper bound: it assumes nothing else became freely tradable first."
+2026-07-31,207781764,67218193,3.0912,638888888,32.5,"Nasdaq/FINRA bi-monthly short-interest report, pulled 2026-08-16. Float = the 638,888,888 Class A shares sold in the IPO (424B4 cover acc. 0001628280-26-042639 + 10-Q acc. 0001628280-26-052535, over-allotment exercised in full). This settlement PREDATES the 6 Aug 2026 unlock, so the IPO float is the correct denominator. Upper bound: it assumes nothing else became freely tradable first."
+# DENOMINATOR, and it is the number the positioning argument turns on.
+# float_shares = 555,555,555 base offering + 83,333,333 over-allotment
+#              = 638,888,888 Class A shares.
+# Source: SEC Form 424B4, Space Exploration Technologies Corp, filed 12 Jun 2026,
+#   accession 0001628280-26-042639 (cover: offering size and option), and Form 10-Q
+#   filed 4 Aug 2026, accession 0001628280-26-052535, which states 638.9 million
+#   shares sold 'including the full exercise of the underwriters' over-allotment
+#   option' for net proceeds of $85,675M after $575M of costs. 638,888,888 x $135
+#   = $86.25bn gross, which ties to that disclosure.
+# Shares outstanding at 28 Jul 2026 (10-Q cover): 7,696,293,669 Class A plus
+#   5,485,486,276 Class B = 13,181,779,945.
+# UPPER BOUND: assumes no other Class A became freely tradable before 6 Aug 2026.
+#   The 424B4 release schedule supports that; it does not prove it.
+# Short interest itself is the Nasdaq/FINRA bi-monthly report, a settlement-date
+#   snapshot and not a continuous series.
+# 6 AUG 2026 UNLOCK: up to 911.5M shares released, more than doubling the float.
+#   Any settlement dated after it needs the then-current float, not this one.
+#   spcx_fetch.py leaves pct_of_float blank for those rows rather than guessing.

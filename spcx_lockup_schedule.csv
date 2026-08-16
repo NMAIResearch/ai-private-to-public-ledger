@@ -1,0 +1,25 @@
+date,tranche,shares_released,running_sum_of_up_to_figures,tranche_vs_si_31jul,si_31jul_pct_of_prior_running_sum,note,source
+2026-06-12,IPO float,638888888,638888888,3.07,,"555,555,555 base + 83,333,333 over-allotment, exercised in full (10-Q)",SEC 424B4 (acc. 0001628280-26-042639) cover + 10-Q 2026-08-04 (acc. 0001628280-26-052535)
+2026-08-06,"clause (a): 20%, 2nd trading day after First Earnings Release Date (4 Aug)",911500000,1550388888,4.39,32.5,excludes Rule 144 affiliates,SEC 424B4 (acc. 0001628280-26-042639) cover + 10-Q 2026-08-04 (acc. 0001628280-26-052535)
+2026-08-06,clause (b): +10% Additional Release Shares,0,1550388888,0,13.4,NOT RELEASED - condition failed; 455.8M shares withheld,SEC 424B4 (acc. 0001628280-26-042639) cover + 10-Q 2026-08-04 (acc. 0001628280-26-052535)
+2026-08-20,clause (c): 7% (70th day),319000000,1869388888,1.54,13.4,excludes Rule 144 affiliates,SEC 424B4 (acc. 0001628280-26-042639) cover + 10-Q 2026-08-04 (acc. 0001628280-26-052535)
+2026-09-09,clause (c): 7% (90th day),319000000,2188388888,1.54,11.1,excludes Rule 144 affiliates,SEC 424B4 (acc. 0001628280-26-042639) cover + 10-Q 2026-08-04 (acc. 0001628280-26-052535)
+2026-09-10,affiliate catch-up (91st day),59100000,2247488888,0.28,9.5,"Rule 144 affiliate shares released earlier, now saleable",SEC 424B4 (acc. 0001628280-26-042639) cover + 10-Q 2026-08-04 (acc. 0001628280-26-052535)
+2026-09-24,clause (c): 7% (105th day),328400000,2575888888,1.58,9.2,,SEC 424B4 (acc. 0001628280-26-042639) cover + 10-Q 2026-08-04 (acc. 0001628280-26-052535)
+2026-10-09,clause (c): 7% (120th day),328400000,2904288888,1.58,8.1,,SEC 424B4 (acc. 0001628280-26-042639) cover + 10-Q 2026-08-04 (acc. 0001628280-26-052535)
+2026-10-24,clause (c): 7% (135th day),328400000,3232688888,1.58,7.2,,SEC 424B4 (acc. 0001628280-26-042639) cover + 10-Q 2026-08-04 (acc. 0001628280-26-052535)
+2026-11-XX,"clause (d): 28%, 2nd trading day after Q3 2026 results",1300000000,4532688888,6.26,6.4,date not yet announced,SEC 424B4 (acc. 0001628280-26-042639) cover + 10-Q 2026-08-04 (acc. 0001628280-26-052535)
+2026-12-08,clause (e): remainder (180th day),797600000,5330288888,3.84,4.6,797.6M BECAUSE clause (b) failed; would have been 328.4M had it triggered,SEC 424B4 (acc. 0001628280-26-042639) cover + 10-Q 2026-08-04 (acc. 0001628280-26-052535)
+2027-02-XX,extended: 20% after Q4 2026 results,351900000,5682188888,1.69,3.9,excludes Musk,SEC 424B4 (acc. 0001628280-26-042639) cover + 10-Q 2026-08-04 (acc. 0001628280-26-052535)
+2027-03-18,extended: 10% (280th day),176000000,5858188888,0.85,3.7,excludes Musk,SEC 424B4 (acc. 0001628280-26-042639) cover + 10-Q 2026-08-04 (acc. 0001628280-26-052535)
+2027-05-XX,extended: 20% after Q1 2027 results,351900000,6210088888,1.69,3.5,excludes Musk,SEC 424B4 (acc. 0001628280-26-042639) cover + 10-Q 2026-08-04 (acc. 0001628280-26-052535)
+2027-05-17,extended: 10% (340th day),176000000,6386088888,0.85,3.3,excludes Musk,SEC 424B4 (acc. 0001628280-26-042639) cover + 10-Q 2026-08-04 (acc. 0001628280-26-052535)
+2027-06-12,extended: 20% (366th day),351900000,6737988888,1.69,3.3,excludes Musk,SEC 424B4 (acc. 0001628280-26-042639) cover + 10-Q 2026-08-04 (acc. 0001628280-26-052535)
+2027-06-12,FOUNDER: all Musk shares (366th day),6400000000,13137988888,30.80,3.1,no early release provisions; incl. 350M Class B underlying options,SEC 424B4 (acc. 0001628280-26-042639) cover + 10-Q 2026-08-04 (acc. 0001628280-26-052535)
+2027-08-XX,extended: remainder after Q2 2027 results,351900000,13489888888,1.69,1.6,excludes Musk,SEC 424B4 (acc. 0001628280-26-042639) cover + 10-Q 2026-08-04 (acc. 0001628280-26-052535)
+# ⚠️ running_sum_of_up_to_figures is a SUM OF "UP TO" CEILINGS, NOT A FLOAT PROJECTION.
+# It reaches 13,489,888,888, which EXCEEDS the 13,181,779,945 Class A + Class B shares
+# outstanding at 28 Jul 2026 (10-Q cover). The tranches therefore overlap and/or are
+# ceilings that will not all be hit. Use the per-tranche shares_released, not the sum.
+# The one figure below that is exact and load-bearing: 8 Dec 2026 releases 797.6M
+# BECAUSE clause (b) failed, against 328.4M had it triggered.
